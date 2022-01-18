@@ -8,5 +8,10 @@ pipeline {
                 bat 'npm install'
             }
         }
+        stage('Deploy') {
+            steps {
+                
+                bat 'npm start'
+            }
     }
 }
